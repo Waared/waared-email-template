@@ -11,17 +11,11 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
-interface PlaidVerifyIdentityEmailProps {
-	validationCode?: string;
-}
-
 const baseUrl = process.env.VERCEL_URL
 	? `https://${process.env.VERCEL_URL}`
 	: '';
 
-export const PlaidVerifyIdentityEmail = ({
-	validationCode = '144833',
-}: PlaidVerifyIdentityEmailProps) => (
+export const PlaidVerifyIdentityEmail = () => (
 	<Html>
 		<Head />
 		<Body style={main}>
@@ -34,13 +28,11 @@ export const PlaidVerifyIdentityEmail = ({
 				<Container style={container}>
 
 					<Section style={firstSection}>
-						<Section style={sectionLayer}>
-						</Section>
-						<Row><Text style={title}>TITS</Text></Row>
-						<Img style={floatingMailImage} src="/static/img2.png" alt="" />
+						<Row><Text style={title}>Title</Text></Row>
+						<Img style={floatingMailImage} src="/static/img3.png" alt="" />
 					</Section>
 
-					<Section style={{ marginTop: "40px" }}>
+					<Section style={{ marginTop: "80px" }}>
 						<Text style={greeting}>Hello Ahmad</Text>
 					</Section>
 
@@ -52,7 +44,7 @@ export const PlaidVerifyIdentityEmail = ({
 
 						</Text>
 					</Section>
-					<Section style={{ width: "100%", textAlign: "center", marginBottom: "auto" }}>
+					<Section style={{ width: "100%", textAlign: "center", marginTop: "50px" }}>
 						<Link style={link}>
 							Verify Email
 						</Link>
@@ -87,8 +79,8 @@ const main = {
 
 const container = {
 	backgroundColor: '#ffffff',
-	border: '1px solid #eee',
-	borderRadius: '5px',
+	border: 'none',
+	borderRadius: '15px',
 	boxShadow: '0 5px 10px rgba(20,50,70,.2)',
 	width: '720px',
 	margin: '0 auto',
@@ -101,31 +93,24 @@ const maxWidthContainer = {
 
 const firstSection = {
 	marginBottom: '20px',
-	backgroundImage: 'url(/static/img1.png)',
+	backgroundColor: '#282560',
 	backgroundSize: 'contain',
 	backgroundRepeat: 'no-repeat',
 	backgroundPosition: 'center top',
-	height: "320px",
 	width: "100%",
-	borderRadius: '5px',
+	borderTopLeftRadius: '15px',
+	borderTopRightRadius: '15px',
+	// borderRadius: '15px',
 	padding: '0',
 	position: 'relative' as const
-}
-
-const sectionLayer = {
-	height: "100%",
-	width: "100%",
-	backgroundColor: "rgba(255,255,255,0.3)",
 }
 
 const title = {
 	color: '#fff',
 	fontSize: '18px',
 	margin: "auto",
-	position: "absolute" as const,
-	top: "10px",
-	left: "50%",
-	transform: "translateX(-50%)",
+	textAlign: "center" as const,
+	marginTop: "30px"
 }
 
 const logo = {
@@ -136,14 +121,10 @@ const logo = {
 };
 
 const floatingMailImage = {
-	position: "absolute" as const,
-	bottom: "0",
-	left: "50%",
-	transform: "translate(-50%, calc(50% - 20px))",
-	width: "100px",
-	backgroundColor: "rgba(255,255,255,0.3)",
-	padding: '20px',
-	borderRadius: "50%"
+	width: "250px",
+	height: "250px",
+	margin: "auto",
+	transform: "translateY(50%)",
 }
 
 const greeting = {
