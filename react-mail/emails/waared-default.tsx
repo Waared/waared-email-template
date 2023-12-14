@@ -11,17 +11,13 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
-const baseUrl = process.env.VERCEL_URL
-	? `https://${process.env.VERCEL_URL}`
-	: '';
-
 export const PlaidVerifyIdentityEmail = () => (
 	<Html>
 		<Head />
 		<Body style={main}>
 			<Container style={maxWidthContainer}>
 				<Img
-					src={`${baseUrl}/static/logo.png`}
+					src={`static/logo.png`}
 					alt="Waared"
 					style={logo}
 				/>
@@ -29,10 +25,10 @@ export const PlaidVerifyIdentityEmail = () => (
 
 					<Section style={firstSection}>
 						<Row><Text style={title}>Title</Text></Row>
-						<Img style={floatingMailImage} src="/static/img3.png" alt="" />
+						<Img style={floatingMailImage} src="static/img3.png" alt="" />
 					</Section>
 
-					<Section style={{ marginTop: "80px" }}>
+					<Section style={{ marginTop: "20px" }}>
 						<Text style={greeting}>Hello Ahmad</Text>
 					</Section>
 
@@ -74,6 +70,7 @@ const link = {
 
 const main = {
 	backgroundColor: '#D9D9D9',
+	margin: '20px 0',
 	fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
 };
 
@@ -82,7 +79,7 @@ const container = {
 	border: 'none',
 	borderRadius: '15px',
 	boxShadow: '0 5px 10px rgba(20,50,70,.2)',
-	width: '720px',
+	width: '1000px',
 	margin: '0 auto',
 	padding: '0 0 50px',
 };
@@ -124,7 +121,8 @@ const floatingMailImage = {
 	width: "250px",
 	height: "250px",
 	margin: "auto",
-	transform: "translateY(50%)",
+	padding: "20px 0"
+	// transform: "translateY(50%)",
 }
 
 const greeting = {
