@@ -15,9 +15,9 @@ export const PlaidVerifyIdentityEmail = () => (
 	<Html>
 		<Head />
 		<Body style={main}>
-			<Container style={maxWidthContainer}>
+			<Container>
 				<Img
-					src={`static/logo.png`}
+					src={`/static/logo.png`}
 					alt="Waared"
 					style={logo}
 				/>
@@ -25,7 +25,7 @@ export const PlaidVerifyIdentityEmail = () => (
 
 					<Section style={firstSection}>
 						<Row><Text style={title}>Title</Text></Row>
-						<Img style={floatingMailImage} src="static/img3.png" alt="" />
+						<Img style={floatingMailImage} src="/static/img3.png" alt="" />
 					</Section>
 
 					<Section style={{ marginTop: "20px" }}>
@@ -84,9 +84,9 @@ const container = {
 	padding: '0 0 50px',
 };
 
-const maxWidthContainer = {
-	width: '720px',
-}
+// const maxWidthContainer = {
+// width: '720px',
+// }
 
 const firstSection = {
 	marginBottom: '20px',
@@ -98,8 +98,7 @@ const firstSection = {
 	borderTopLeftRadius: '15px',
 	borderTopRightRadius: '15px',
 	// borderRadius: '15px',
-	padding: '0',
-	position: 'relative' as const
+	padding: '0'
 }
 
 const title = {
