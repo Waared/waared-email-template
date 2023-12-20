@@ -17,15 +17,15 @@ export const PlaidVerifyIdentityEmail = () => (
 		<Body style={main}>
 			<Container style={containerStyle}>
 				<Img
-					src={`static/logo.png`}
+					src={`https://testapi.waared.sa/media/email/new-template-logo.png`}
 					alt="Waared"
 					style={logo}
 				/>
 				<Container style={container}>
 
 					<Section style={firstSection}>
-						<Row><Text style={title}>Title</Text></Row>
-						<Img style={floatingMailImage} src="static/img3.png" alt="" />
+						<Text style={title}>Title</Text>
+						<Img style={floatingMailImage} src="https://testapi.waared.sa/media/email/new-template-img.png" alt="" />
 					</Section>
 
 					<Section style={{ marginTop: "20px" }}>
