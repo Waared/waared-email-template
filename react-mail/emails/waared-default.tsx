@@ -5,6 +5,7 @@ import {
 	Html,
 	Img,
 	Link,
+	Row,
 	Section,
 	Text,
 } from '@react-email/components';
@@ -45,12 +46,24 @@ export const PlaidVerifyIdentityEmail = () => (
 						</Link>
 					</Section>
 				</Container>
+				<Row>
+					<Text style={footerStyle}>
+						Waared - Copyright © 2023 waared.sa, Nahda St. Riyadh, KSA
+
+					</Text>
+				</Row>
 			</Container>
 		</Body>
 	</Html>
 );
 
 export default PlaidVerifyIdentityEmail;
+
+const footerStyle = {
+	color: '#444',
+	fontSize: '12px',
+	textAlign: 'center' as const,
+}
 
 const link = {
 	backgroundColor: "#EE4036",
@@ -68,6 +81,7 @@ const link = {
 }
 
 const main = {
+	borderRadius: '15px',
 	backgroundColor: "#f2f2f2",
 	margin: '20px 0',
 	fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
@@ -82,7 +96,6 @@ const container = {
 	backgroundColor: '#ffffff',
 	border: 'none',
 	borderRadius: '15px',
-	boxShadow: '0 5px 10px rgba(20,50,70,.2)',
 	margin: '0 auto',
 	padding: '0 0 50px 0',
 };
