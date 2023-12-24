@@ -68,6 +68,7 @@ const link = {
 }
 
 const main = {
+	backgroundColor: "#f2f2f2",
 	margin: '20px 0',
 	fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
 };
