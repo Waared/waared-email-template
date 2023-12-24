@@ -5,7 +5,6 @@ import {
 	Html,
 	Img,
 	Link,
-	Row,
 	Section,
 	Text,
 } from '@react-email/components';
@@ -84,9 +83,8 @@ const container = {
 	border: 'none',
 	borderRadius: '15px',
 	boxShadow: '0 5px 10px rgba(20,50,70,.2)',
-	width: '1000px',
 	margin: '0 auto',
-	padding: '0 0 50px',
+	padding: '0 0 50px 0',
 };
 
 // const maxWidthContainer = {
@@ -98,7 +96,6 @@ const firstSection = {
 	width: "100%",
 	borderTopLeftRadius: '15px',
 	borderTopRightRadius: '15px',
-	// borderRadius: '15px',
 }
 
 const title = {
