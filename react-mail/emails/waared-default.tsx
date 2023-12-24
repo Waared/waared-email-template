@@ -55,7 +55,7 @@ export default PlaidVerifyIdentityEmail;
 const link = {
 	backgroundColor: "#EE4036",
 	border: "none",
-	borderRadius: "50px",
+	borderRadius: "5px",
 	color: "white",
 	width: "200px",
 	height: "35px",
@@ -68,7 +68,6 @@ const link = {
 }
 
 const main = {
-	backgroundColor: '#D9D9D9',
 	margin: '20px 0',
 	fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
 };
