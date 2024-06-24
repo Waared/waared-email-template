@@ -70,13 +70,13 @@ export const WaaredHappyEidEmail = ({
 							</Container>
 						</Section>
 
-						<Section style={{ "background": "linear-gradient(#262261,#262261)" }} className="h-[212px] text-white px-[62px] mt-[34px] py-12">
+						<Section style={{ "background": "linear-gradient(#262261,#262261)" }} className="h-[212px]  px-[62px] mt-[34px] py-12">
 							<Row>
 								<Column align="left">
 									<Img height="24.5" width="70.5"
 										src={`${baseUrl}/static/logo-white.png`}
 									/>
-									<Text className="text-white m-0 mt-1 text-[11px]">
+									<Text style={{ color: "linear-gradient(#262261, #262261)" }} className="m-0 mt-1 text-[11px]">
 										Riyadh, Saudi Arabia
 									</Text>
 								</Column>
