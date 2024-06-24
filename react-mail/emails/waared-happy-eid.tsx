@@ -70,7 +70,7 @@ export const WaaredHappyEidEmail = ({
 							</Container>
 						</Section>
 
-						<Section style={{ "backgroundColor": "#262261" }} className="h-[212px] text-white px-[62px] mt-[34px] py-12">
+						<Section style={{ "background": "linear-gradient(#262261,#262261)" }} className="h-[212px] text-white px-[62px] mt-[34px] py-12">
 							<Row>
 								<Column align="left">
 									<Img height="24.5" width="70.5"
