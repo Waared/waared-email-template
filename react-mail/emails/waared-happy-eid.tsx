@@ -35,7 +35,7 @@ export const WaaredHappyEidEmail = ({
 			<Preview>Happy Eid!</Preview>
 			<Tailwind>
 				<Body className="bg-white my-auto mx-auto font-sans px-2">
-					<Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto max-w-[600px]">
+					<Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto max-w-[600px] bg-white">
 						<Section className="mb-[25px]">
 							<Img
 								src={`${baseUrl}/static/adha_email.png`}
@@ -46,17 +46,17 @@ export const WaaredHappyEidEmail = ({
 							/>
 						</Section>
 						<Section className="px-[62px]">
-							<Heading className="text-[16px] font-bold text-center text-[#EE4036]">
+							<Heading className="text-[16px] font-bold text-center text-[#EE4036] m-0 py-1">
 								Dear {username ?? "Waared Customer"}
 							</Heading>
-							<Text className="text-justify text-[#262261] m-0 mb-4">
-								From all of us at Waared, we wish you and your loved ones had a joyous <span className="inline-block mx-auto w-full text-center">blessed Eid.</span>
+							<Text className="text-center m-0 mb-4" style={{ "color": "#262261" }}>
+								From all of us at Waared, we wish you and your loved ones had a joyous and blessed Eid.
 							</Text>
 
-							<Text className="text-[#262261] m-0">
+							<Text className="m-0" style={{ color: "#262261" }}>
 								Shukran,
 							</Text>
-							<Text className="text-[#262261] m-0">
+							<Text className="m-0 pb-3" style={{ color: "#262261" }}>
 								Waared Team
 							</Text>
 
@@ -70,7 +70,7 @@ export const WaaredHappyEidEmail = ({
 							</Container>
 						</Section>
 
-						<Section className="bg-[#262261] h-[212px] text-white px-[62px] mt-[34px]">
+						<Section style={{ "backgroundColor": "#262261" }} className="h-[212px] text-white px-[62px] mt-[34px] py-12">
 							<Row>
 								<Column align="left">
 									<Img height="24.5" width="70.5"
